@@ -25,13 +25,13 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "watch" : "coffee -o ./lib/ -cw ./src/",
+    "start": "node lib/kue-watch-on-3000.js"
   },
   "devDependencies": {
-    "chai": ">=1.2.0",
-    "mocha": ">=1.3.2",
-    "should": ">=1.1.0",
-    "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "kue": "latest"
   },
   "keywords": []
 }
