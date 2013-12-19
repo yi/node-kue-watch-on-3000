@@ -27,6 +27,8 @@
   "scripts": {
     "watch" : "coffee -o ./lib/ -cw ./src/",
     "start": "node lib/kue-watch-on-3000.js" ,
+    "forever-start" : "forever start lib/kue-watch-on-3000.js",
+    "forever-stop" : "forever stop lib/kue-watch-on-3000.js",
     "clear": "redis-cli keys '*' | xargs redis-cli del "
   },
   "devDependencies": {
